@@ -1,0 +1,129 @@
+.header{
+    background-color: rgb(46, 46, 46);
+    height: 60px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+    height: 60px;
+}
+
+.nav_list{
+    text-decoration: none;
+    list-style: none;
+    
+}
+.nav_logo{
+    width: 40px;
+}
+
+.nav_list--item{
+    color: whitesmoke;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14px;
+    position: relative;
+    font-weight: 700;
+    
+}
+
+.nav_list--item--separate::before{
+    content: "";
+    border-left: 1px solid #ffffff;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: -14px;
+    line-height: 16px;
+    transform: translateY(-50%);
+
+}
+
+
+/* Gridlayout */
+
+
+.container{
+    background-color: rgb(221, 221, 221);
+}
+.wrapper{
+    display: grid;
+    grid-template-areas: 'menu menu title_menu title_menu title_menu title_menu'
+                        'menu menu product1 product2 product3 product4'       
+                                                                       ;
+    grid-gap: 10px;
+    background-color: rgb(221, 221, 221);
+    padding: 10px;
+}
+.menu{
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    grid-area: menu;
+}
+.title_menu{
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    grid-area: title_menu;
+}
+.product1{
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    grid-area: product1;
+}
+.product2{
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    grid-area: product2;
+}
+.product3{
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    grid-area: product3;
+}
+.product4{
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    grid-area: product4;
+}
+
+/* -------------------------------- */
+
+
+.header_menu{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(110, 110, 110);
+    margin: 16px;
+}
+.list_menu{
+    margin: 16px;
+}
+.item_menu{
+    list-style: none;
+    padding-top: 8px;
+}
+.link_menu{
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+}
+.header_menu--icon{
+    margin-right: 4px;
+}
+.text_menu{
+    text-align: center;
+    margin: auto;
+}
+
+
+/* design product  */
+
+.img_product{
+    background-image: url(../img/product1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100%;
+}
